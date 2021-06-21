@@ -5,7 +5,38 @@ import styled from 'styled-components';
 
 
 const NavMenuStyles = styled.div`
-    background: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    padding: 1rem 0rem;
+    background: var(--dark-bg);
+    ul{
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 90%auto;
+        text-align: center;
+        li{
+            display: inline-block;
+            border-radius: 8px;
+            transition: 0.3s ease background-color;
+            &:hover{
+                background-color: var(--deep-dark);
+            }
+        }
+        a{
+            display:inline-block;
+            font-family: 'RobotoMono Regular';
+            padding: 1rem 1rem;
+            font-size: 2rem;
+            color: var(--gray-1);
+            outline: none;
+        }
+        .active{
+            color: var(--white);
+        }
+    }
 `;
 
 const NavMenu = () => {
@@ -13,7 +44,7 @@ const NavMenu = () => {
         <NavMenuStyles>
             <ul>
                 <li>
-                    <NavLink to="/">Home</NavLink>    
+                    <NavLink to="/" exact>Home</NavLink>    
                 </li>
                 <li>
                     <NavLink to="/about">About</NavLink>    
