@@ -14,7 +14,7 @@ const ButtonStyle = styled.div`
         display: inline-block;
         border: 2px solid var(--gray-1);
         color: ${(props) => 
-            props.outline ? 'var(--gray-1' : 'black'
+            props.outline ? 'var(--gray-1)' : 'black'
         };
     }
     @media only screen and (max-width: 768px){
@@ -30,7 +30,7 @@ export default function Button({
     outline=false
 }) {
     return (
-        <ButtonStyle outline={outline}>
+        <ButtonStyle outline={outline} className="button-wrapper">
             <Link className="button" to={btnLink} >{btnText}</Link>
         </ButtonStyle>
     );
