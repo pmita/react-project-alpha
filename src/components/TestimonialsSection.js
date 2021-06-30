@@ -73,7 +73,7 @@ const TestimonialStyles = styled.div`
     .fade-exit-active{
         opacity: 0;
         transform: scale(0.96);
-        transition: 250ms ease-in all;
+        transition: 250ms ease-in all; 
     }
 `;
 
