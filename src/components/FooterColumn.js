@@ -12,7 +12,7 @@ const ColStyles = styled.div`
         margin-bottom: 1rem;
     }
     a{
-        font-size: 1.8rem;ϡ
+        font-size: 1.8rem;
     }
 `;
 
